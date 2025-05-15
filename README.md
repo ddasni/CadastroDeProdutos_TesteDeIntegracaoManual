@@ -20,5 +20,5 @@ Aula de Desenvolvimento de Sistemas do dia 15/05/24
 
 
 ## Screenshots
-![Teste 1](./testes_imagens/teste1.png)
+![Teste 1](./testes_imagens/teste1.jpg)
 
