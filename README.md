@@ -1,0 +1,25 @@
+
+# Cadastro de Produtos e teste de integração manual
+
+Aula de Desenvolvimento de Sistemas do dia 15/05/24 
+
+## Autores
+
+- [@Daniel Sousa](https://www.github.com/ddasni)
+- [@Pedro Henrich](https://www.github.com/P3dro1717)
+
+
+## Tabela de Resultados do Teste
+| Produto      | Preço      | Disponibilidade   | Resultados Obtidos           | Status         |
+|:------------:|:----------:|:-----------------:|:----------------------------:|:--------------:|
+| Camiseta     | R$ 29,90   | Em estoque        | Alta procura                 | Disponível     |
+| Calça Jeans  | R$ 89,90   | Fora de estoque   | Esgotado rapidamente         | Indisponível   |
+| Tênis        | R$ 199,90  | Em estoque        | Vendas estáveis              | Disponível     |
+| Calça Jeans  | R$ 89,90   | Fora de estoque   | Esgotado rapidamente         | Indisponível   |
+| Tênis        | R$ 199,90  | Em estoque        | Vendas estáveis              | Disponível     |
+
+
+## Screenshots
+
+[Teste um]
+
