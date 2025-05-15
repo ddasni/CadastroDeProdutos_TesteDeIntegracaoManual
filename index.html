@@ -9,13 +9,13 @@
         var preco = document.getElementById("preco").value;
         var descricao = document.getElementById("descricao").value;
 
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "controllerProduto.php?nome=" + encodeURIComponent(nome) +
-                             "&preco=" + encodeURIComponent(preco) +
-                             "&descricao=" + encodeURIComponent(descricao), true);
-        xhttp.send();
+        var requisicao = new XMLHttpRequest();
+        requisicao.open("GET", "controllerProduto.php?nome="+nome+
+                            "&preco=" + preco +
+                            "&descricao=" + descricao);
+        requisicao.send();
 
-        xhttp.onload = function () {
+        requisicao.onload = function () {
             document.getElementById("resposta").innerHTML = this.responseText;
         }
     }
