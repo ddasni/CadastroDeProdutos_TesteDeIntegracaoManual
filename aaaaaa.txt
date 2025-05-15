@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS testes;
+USE testes;
+
+CREATE TABLE produtos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    descricao TEXT NOT NULL
+);

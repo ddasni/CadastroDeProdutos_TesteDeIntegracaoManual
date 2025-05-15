@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+    <script>
+    function cadastrar() {
+        var nome = document.getElementById("nome").value;
+        var preco = document.getElementById("preco").value;
+        var descricao = document.getElementById("descricao").value;
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "controllerProduto.php?nome=" + encodeURIComponent(nome) +
+                             "&preco=" + encodeURIComponent(preco) +
+                             "&descricao=" + encodeURIComponent(descricao), true);
+        xhttp.send();
+
+        xhttp.onload = function () {
+            document.getElementById("resposta").innerHTML = this.responseText;
+        }
+    }
+    </script>
+</head>
+<body>
+    <h2>Cadastro de Produtos</h2>
+    <input id="nome" placeholder="Nome do Produto"><br><br>
+    <input id="preco" placeholder="Preço"><br><br>
+    <textarea id="descricao" placeholder="Descrição"></textarea><br><br>
+    <button onclick="cadastrar()">Cadastrar</button>
+    <p id="resposta"></p>
+</body>
+</html>
